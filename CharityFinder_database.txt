@@ -1,0 +1,21 @@
+Database :   charityfinder
+
+Tables :   
+	 1> charity :-
+		| chid     | int          | PRIMARY | 
+		| chname   | varchar(20)  | 
+		| mission  | varchar(250) | 
+		| location | varchar(30)  | 
+		| contact  | bigint       | 
+	
+	 2> donate :-
+		| donid  | int       | auto_increment  |  PRIMARY |
+		| id     | int       |                  
+		| chid   | int       |                   
+		| amt    | int       | 
+		| dodate | timestamp |       
+     
+	3> donors_login :-
+	        | id       | int    | PRIMARY   | auto_increment |
+		| username | varchar(255) |                
+		| password | varchar(255) | 
